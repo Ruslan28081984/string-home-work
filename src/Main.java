@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        task1and2();
-        task1and3();
-
+//        task1and2();
+//        task1and3();
+        task1and4();
     }
         public static  void task1and2() {
             String firstName = "Ivan";
@@ -20,4 +20,15 @@ public class Main {
             fullName1.replace('ё', 'е');
             System.out.println( fullName1.replace('ё', 'е'));
         }
+
+    public static  void task1and4(){
+        String slovo = "aabccddefgghiijjkk";
+        char[] bukvy = slovo.toCharArray();
+        for (int i = 0; i < bukvy.length -1 ; i++) {
+            if (bukvy[i] == bukvy[i + 1]){
+                System.out.print(bukvy[i]);
+                }
+            }
+        }
     }
+
